@@ -47,7 +47,8 @@ def ElPrincGraph(X, NumNodes, Lambda, Mu, InitNodePosition=None,
 
         mn = np.mean(PC1)
         st = np.std(PC1)
-
+        
+ 
         NodeP = np.dot(np.linspace(mn - st, mn + st, CurrentNumberOfNodes).reshape(2,1), vglobal[:,0].reshape(1,-1))
         #NodeP = NodeP+mv.reshape(3,1)
 
