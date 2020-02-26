@@ -19,7 +19,7 @@ def computeElasticPrincipalGraph(data, NumNodes, newDim=None, drawPCAview=True,
                                  MaxNumberOfIterations=10, eps=0.01,
                                  verbose=True,nReps=1,ProbPoints=1,Topo="None"):
     
-    NodePositions = np.zeros((nReps+1, NumNodes, 3))
+    NodePositions = np.zeros((nReps+1, NumNodes, data.shape[1]))
     ElasticMatrix = np.zeros((nReps+1, NumNodes, NumNodes))
     Edges = np.zeros((nReps + 1, 2, NumNodes - 1))
     if Topo=="Circle":
